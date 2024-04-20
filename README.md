@@ -92,4 +92,4 @@ There is no connections between JavaScript and Java. The name similarity is a ma
 
 After the implementation in web browsers other than **Netscape Navigator** the JavaScript standard was created and called **ECMAScript** (the name is coming from the Ecma International organisation). JavaScript and ECMAScript names are interchangeable.
 
-JavaScript is not limited to web browsers usage. It is implemented as a script language of such databases as **MongoDB** or **CouchDB**. **Node.js** is an example of desktops and servers programming platform.
+JavaScript is not limited to web browsers usage. It is implemented as a script language of such databases as **MongoDB** or **CouchDB**. **Node.js** is an example of desktops and servers programming platform.Pod kopułą maszyny pracuje program. Bez wysiłku kurczy się i rozszerza. Elektrony w doskonałej harmonii rozpraszają się i przegrupowują. Pojawiające się na monitorze formy są jak zmarszczki na tafli jeziora. To, co istotne, pozostaje niewidoczne pod powierzchnią.
