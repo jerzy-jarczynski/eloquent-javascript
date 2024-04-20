@@ -84,3 +84,12 @@ console.log(sum(range(1, 10)));
 Programs can be written in many different ways, from completely unreadable to similar to natural language.
 The last form looks like a sentence: *log the sum of the range of numbers from 1 to 10*
 
+## JavaScript
+
+The language was invented in 1995 as a technology enabling adding programs to webpagesa in the **Netscape Navigator** web browser. Then it was implemented in other web browsers.
+
+There is no connections between JavaScript and Java. The name similarity is a marketing action.
+
+After the implementation in web browsers other than **Netscape Navigator** the JavaScript standard was created and called **ECMAScript** (the name is coming from the Ecma International organisation). JavaScript and ECMAScript names are interchangeable.
+
+JavaScript is not limited to web browsers usage. It is implemented as a script language of such databases as **MongoDB** or **CouchDB**. **Node.js** is an example of desktops and servers programming platform.
