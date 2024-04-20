@@ -91,4 +91,79 @@ Strings serve as the represantion of text values.
 // 3 ways of represanting strings
 ```
 
-**\\**
+**\\** - a backslash between quotes is used for adding special characters (*substitute symbol for signs*)
+
+```js
+"This is the first line.\nAnd this is the second line."
+// \n for line break example
+```
+
+output result:
+
+```
+This is the first line.
+And this is the second line
+```
+
+double backslash for representing the backslash in the string
+
+```js
+"The new line sign has the form of \\n."
+```
+
+output result:
+
+```
+The new line sign has the of \n.
+```
+
+> Strings are represented as a series of bits using **Unicode** standard.
+> JavaScript allocate 16 bits for every sign in the string. (2^16 possible values)
+>> Unicode standard has approximately twice as much values so some of them use 2 character units.
+
+**+** - concatenation operator for adding strings
+
+```js
+"con" + "ca" + "te" + "na" + "tion"
+// concatenation example
+```
+
+**template literals** - the gravis string notation, that gives more action possiblities
+
+```js
+`The half of 100 is ${ 100 / 2 }.`
+// template literal example with calculated value inside the string
+```
+
+> In the template literal, everything what is located in the `${}` construction is interpreted in the purpose of calculate the result.
+> The result is converted into string and put in the place of calculation.
+
+result
+
+```
+The half ofd 100 is 50.
+```
+
+### unary operators
+
+The **typeof** operator is an example of unary operators.
+It returns string value specifying the name of value type.
+
+```js
+console.log(typeof 4.5);
+// --> number
+console.log(typeof "x");
+// --> string
+```
+
+Operators that performing actions on 2 values are called binary operators.
+
+> The minus operator can be used in the form of unary or binary operator.
+
+```js
+console.log(- (10 - 2));
+// --> -8
+```
+
+### Logical values
+
