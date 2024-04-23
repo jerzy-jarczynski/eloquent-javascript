@@ -167,3 +167,138 @@ console.log(- (10 - 2));
 
 ### Logical values
 
+**logical type** - is used to represent the value "yes/no" or "on/off". It has only two values `true` and `false`.
+
+#### Comparison
+
+```js
+console.log(3 > 2);
+// --> true
+console.log(3 < 2);
+// --> false
+```
+
+**>** and **<** - comparison operators (greater than and less than, binary).
+
+```js
+console.log("Aardvark" < "Zoroaster");
+// --> true
+```
+
+Other operators:
+**>=** - greater or equal to
+**<=** - less or equal to
+**==** - equal to
+**!=** - not equal to
+
+```js
+console.log("Itchy" != "Scratchy");
+// --> true
+console.log("Apple" == "Orange");
+// --> false
+```
+
+> `NaN` is not equal to itself.
+
+```js
+console.log(NaN == NaN);
+// --> false
+```
+
+#### logical operators
+
+There are 3 logical operators in JavaScript: *and*, *or* and *not*, which can be applied to logical values.
+
+**&&** - represents logical *and*. It returns `true` if and only if both arguments have `true` value.
+
+```js
+console.log(true && false);
+// --> false
+console.log(true && true);
+// --> true
+```
+
+**||** - represents logical *or*. It returns `true` if at lease one argument is `true`.
+
+```js
+console.log(false || true);
+// --> true
+console.log(false || false);
+// --> false
+```
+
+**!** - represents logical *not*. It is unary operator that reverses the passed value.
+
+**ternary operator** or conditional operator. The value to the left of the `?` determines which of the other values will be selected.
+
+```js
+console.log(true ? 1 : 2);
+// --> 1
+console.log(false ? 1 : 2);
+// --> 2
+```
+
+#### nullish values
+
+**null** and **undefined** - special values for meaninglessness, which do not convey any information.
+
+> `null` and `undefined` values can be used interchangeably.
+> In principle, there is no difference between them.
+
+### Automatic type conversion
+
+Examples of code generating strange results
+
+```js
+console.log(8 * null);
+// --> 0
+console.log("5" - 1);
+// --> 4
+console.log("5" + 1);
+// --> 51
+console.log("five" * 2);
+// --> NaN
+console.log(false == 0);
+// --> true
+```
+
+**type conversion** - the conversion behaviour to the correct type when an operator is applied to a value of an incorrect type.
+
+When the `==` operator is applied to values of different types, in most cases JavaScript attempts to convert one type of value into another.
+For `null` and `undefined`, the value `true` can only be obtained if there is a `null` or `undefined` on both sides.
+
+```js
+console.log(null == undefined);
+// --> true
+console.log(null == 0);
+// --> false
+```
+
+**===** and **!==** - three-character operators that denote identity check (`===`) and exact difference (`!==`). These operators prevent automatic coversion.
+
+#### Abbreviated method of determining the value of logical expressions
+
+**||** and **&&** - applied to values od different types attempt to convert the value on the left into a logical type. Depending on this conversion, they return the original value on the left or the value on the right.
+
+```js
+console.log(null || "user");
+// --> user
+console.log("Carol" || "user");
+// --> Carol
+```
+
+> the `&&` operator works in similar way, only the reverse of `||`
+
+**short-circuit evaluation** - a mechanism whereby the expressuib to the right of the `&&` and `||` operators will be executed only when necessary.
+
+### Summary
+
+4 types of values in JavaScript: numbers, strings, logical values, undefined values.
+
+Operators are used to combine and transform values:
+- binary arithmetical operators: +, -, *, /, %;
+- concatenation: +
+- comparison: ==, !=, ===, !==, <, >, <=, >=;
+- logical: &&, ||;
+- unary: numerical negation -, logical negation !, typeof;
+- ternary operator: ?:
